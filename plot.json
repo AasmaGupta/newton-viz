@@ -184,19 +184,9 @@
 "7": 7,
 "8": 8,
 "9": 9,
-"10": 10,
-"11": 11,
-"12": 12,
-"13": 13,
-"14": 14,
-"15": 15,
-"16": 16,
-"17": 17,
-"18": 18,
-"19": 19,
-"20": 20 
+"10": 10 
 },
-"total": 20 
+"total": 10 
 },
 "geom7_point_newton": {
  "geom": "point",
@@ -310,8 +300,8 @@
 "alpha":      0.3 
 },
 "types": {
- "y": "numeric",
-"x": "numeric",
+ "x": "numeric",
+"y": "numeric",
 "group": "character",
 "PANEL": "integer" 
 },
@@ -338,8 +328,8 @@
 "help_showSelected": "start" 
 },
 "types": {
- "y": "numeric",
-"x": "numeric",
+ "x": "numeric",
+"y": "numeric",
 "group": "character",
 "showSelected1": "numeric",
 "PANEL": "integer" 
@@ -371,10 +361,10 @@
 "help_clickSelects": "iteration" 
 },
 "types": {
- "y": "numeric",
-"x": "numeric",
+ "x": "numeric",
 "xmin": "numeric",
 "xmax": "numeric",
+"y": "numeric",
 "clickSelects": "integer",
 "group": "character",
 "PANEL": "integer" 
@@ -401,8 +391,8 @@
 "help_showSelected": "iteration" 
 },
 "types": {
- "y": "numeric",
-"x": "numeric",
+ "x": "numeric",
+"y": "numeric",
 "showSelected1": "integer",
 "group": "character",
 "PANEL": "integer" 
@@ -420,8 +410,8 @@
 },
 "time": {
  "variable": "iteration",
-"ms":      800,
-"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" ] 
+"ms":     1000,
+"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ] 
 },
 "selectors": {
  "start": {
@@ -429,8 +419,8 @@
 "type": "single",
 "showSelected": true,
 "clickSelects": true,
-"selected": "-4",
-"levels": [ "-4", "-2.85714285714286", "-1.71428571428571", "-0.571428571428572", "0.571428571428571", "1.71428571428571", "2.85714285714286", "4" ],
+"selected": "-3",
+"levels": [ "-3", "-1", "0.5", "2.5", "4" ],
 "update": [
  "geom4_path_newton",
 "geom7_point_newton",
@@ -444,7 +434,7 @@
 "chunks": "iteration",
 "clickSelects": true,
 "selected": "1",
-"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" ],
+"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
 "update": [
  "geom6_line_newton",
 "geom9_segment_newton",
@@ -501,8 +491,7 @@
 "loc": {
  "x": [
  [
-       -6,
-      -3,
+       -3,
        0,
        3,
        6 
@@ -510,11 +499,10 @@
 ],
 "y": [
  [
-      -50,
-     -25,
-       0,
-      25,
-      50 
+        0,
+      10,
+      20,
+      30 
 ] 
 ] 
 } 
@@ -527,8 +515,7 @@
 "loc": {
  "x": [
  [
-       -6,
-    -4.5,
+     -4.5,
       -3,
     -1.5,
        0,
@@ -540,52 +527,47 @@
 ],
 "y": [
  [
-      -50,
-   -37.5,
-     -25,
-   -12.5,
+       -5,
        0,
-    12.5,
+       5,
+      10,
+      15,
+      20,
       25,
-    37.5,
-      50 
+      30 
 ] 
 ] 
 } 
 },
 "axis1": {
  "x": [
-       -6,
-      -3,
+       -3,
        0,
        3,
        6 
 ],
 "xlab": [
- "-6",
-"-3",
+ "-3",
 "0",
 "3",
 "6" 
 ],
-"xrange": [     -6.6,      6.6 ],
+"xrange": [  -5.5625,   6.8125 ],
 "xline": false,
 "xticks": true,
 "y": [
-      -50,
-     -25,
-       0,
-      25,
-      50 
+        0,
+      10,
+      20,
+      30 
 ],
 "ylab": [
- "-50",
-"-25",
-"0",
-"25",
-"50" 
+ "0",
+"10",
+"20",
+"30" 
 ],
-"yrange": [      -55,       55 ],
+"yrange": [ -9.953125, 33.01562 ],
 "yline": false,
 "yticks": true 
 },
@@ -600,20 +582,18 @@
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "-6",
-"-3",
+ "-3",
 "0",
 "3",
 "6" 
 ],
 "ylabs": [
- "-50",
-"-25",
-"0",
-"25",
-"50" 
+ "0",
+"10",
+"20",
+"30" 
 ],
-"title": "Newton Method (Multiple Starting Points)",
+"title": "Newton Method: Effect of Different Starting Points",
 "title_size": "14.4pt",
 "options": {
  "width":      400,
@@ -684,18 +664,17 @@
  "x": [
  [
         0,
+     2.5,
        5,
-      10,
-      15,
-      20 
+     7.5,
+      10 
 ] 
 ],
 "y": [
  [
-      -10,
-      -6,
-      -2,
-       2 
+        0,
+       5,
+      10 
 ] 
 ] 
 } 
@@ -709,26 +688,24 @@
  "x": [
  [
         0,
+    1.25,
      2.5,
+    3.75,
        5,
+    6.25,
      7.5,
-      10,
-    12.5,
-      15,
-    17.5,
-      20 
+    8.75,
+      10 
 ] 
 ],
 "y": [
  [
-      -12,
-     -10,
-      -8,
-      -6,
-      -4,
-      -2,
-       0,
-       2 
+        0,
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5 
 ] 
 ] 
 } 
@@ -736,34 +713,32 @@
 "axis1": {
  "x": [
         0,
+     2.5,
        5,
-      10,
-      15,
-      20 
+     7.5,
+      10 
 ],
 "xlab": [
- "0",
-"5",
-"10",
-"15",
-"20" 
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0" 
 ],
-"xrange": [     -0.5,     21.5 ],
+"xrange": [        0,       11 ],
 "xline": false,
 "xticks": true,
 "y": [
-      -10,
-      -6,
-      -2,
-       2 
+        0,
+       5,
+      10 
 ],
 "ylab": [
- "1e-10",
-"1e-06",
-"1e-02",
-"1e+02" 
+ "0",
+"5",
+"10" 
 ],
-"yrange": [ -13.73249, 3.901935 ],
+"yrange": [ -0.703125, 14.76562 ],
 "yline": false,
 "yticks": true 
 },
@@ -778,19 +753,18 @@
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "0",
-"5",
-"10",
-"15",
-"20" 
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0" 
 ],
 "ylabs": [
- "1e-10",
-"1e-06",
-"1e-02",
-"1e+02" 
+ "0",
+"5",
+"10" 
 ],
-"title": "Convergence (log scale)",
+"title": "Convergence of Newton Method",
 "title_size": "14.4pt",
 "options": {
  "width":      400,
@@ -810,5 +784,5 @@
 } 
 },
 "source": "https://github.com/AasmaGupta/newton-viz",
-"title": "Newton Method Visualization (Multi-start)" 
+"title": "Newton Method Visualization" 
 }
