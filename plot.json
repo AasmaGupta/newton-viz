@@ -10,8 +10,7 @@
 "params": {
  "na.rm": false,
 "na.rm": false,
-"colour": "#000000",
-"size":        1 
+"colour": "#000000" 
 },
 "types": {
  "x": "numeric",
@@ -47,23 +46,161 @@
 "chunks": 1,
 "total": 1 
 },
-"geom3_segment_newton": {
+"geom3_path_newton": {
+ "geom": "path",
+"classed": "geom3_path_newton",
+"aes": {
+ "x": "x",
+"y": "y",
+"group": "start" 
+},
+"params": {
+ "lineend": "butt",
+"linejoin": "round",
+"linemitre":        1,
+"na.rm": false,
+"na.rm": false,
+"alpha":      0.2 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"group": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "group" 
+],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom4_path_newton": {
+ "geom": "path",
+"classed": "geom4_path_newton",
+"aes": {
+ "x": "x",
+"y": "y",
+"group": "start",
+"showSelected1": "start" 
+},
+"params": {
+ "lineend": "butt",
+"linejoin": "round",
+"linemitre":        1,
+"na.rm": false,
+"na.rm": false,
+"size":      1.2,
+"showSelected": "start",
+"help_showSelected": "start" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"group": "character",
+"showSelected1": "numeric",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_line_newton": {
+ "geom": "line",
+"classed": "geom5_line_newton",
+"aes": {
+ "x": "x",
+"y": "y",
+"group": "interaction(start, iteration)",
+"showSelected1": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#FF0000",
+"showSelected": "iteration",
+"help_showSelected": "iteration" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"group": "character",
+"showSelected1": "integer",
+"PANEL": "integer" 
+},
+"chunk_order": [
+ "iteration" 
+],
+"nest_order": [
+ "group" 
+],
+"subset_order": [],
+"chunks": {
+ "1": 1,
+"2": 2,
+"3": 3,
+"4": 4,
+"5": 5,
+"6": 6,
+"7": 7,
+"8": 8,
+"9": 9,
+"10": 10 
+},
+"total": 10 
+},
+"geom6_point_newton": {
+ "geom": "point",
+"classed": "geom6_point_newton",
+"aes": {
+ "x": "x",
+"y": "y",
+"clickSelects": "start" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"clickSelects": "start",
+"help_clickSelects": "start" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"clickSelects": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom7_segment_newton": {
  "geom": "segment",
-"classed": "geom3_segment_newton",
+"classed": "geom7_segment_newton",
 "aes": {
  "x": "x",
 "y": "y",
 "xend": "xend",
 "yend": "yend",
-"group": "interaction(iteration, type)",
 "showSelected1": "iteration" 
 },
 "params": {
  "lineend": "butt",
 "na.rm": false,
 "na.rm": false,
-"colour": "#FF0000",
-"size":        1,
+"colour": "#0000FF",
+"linetype": "dashed",
 "showSelected": "iteration",
 "help_showSelected": "iteration" 
 },
@@ -72,9 +209,9 @@
 "xend": "numeric",
 "y": "numeric",
 "yend": "numeric",
-"group": "character",
 "showSelected1": "integer",
-"PANEL": "integer" 
+"PANEL": "integer",
+"group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
@@ -86,61 +223,68 @@
 "chunks": 1,
 "total": 1 
 },
-"geom4_point_newton": {
- "geom": "point",
-"classed": "geom4_point_newton",
-"aes": {
- "x": "x",
-"y": "y",
-"clickSelects": "iteration" 
-},
-"params": {
- "na.rm": false,
-"na.rm": false,
-"size":        3,
-"clickSelects": "iteration",
-"help_clickSelects": "iteration" 
-},
-"types": {
- "x": "numeric",
-"y": "numeric",
-"clickSelects": "integer",
-"PANEL": "integer",
-"group": "character" 
-},
-"chunk_order": [],
-"nest_order": [],
-"subset_order": [],
-"chunks": 1,
-"total": 1 
-},
-"geom5_line_convergence": {
+"geom8_line_convergence": {
  "geom": "line",
-"classed": "geom5_line_convergence",
+"classed": "geom8_line_convergence",
 "aes": {
  "x": "iteration",
-"y": "value" 
+"y": "value",
+"group": "start" 
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
-"size":        1 
+"alpha":      0.3 
 },
 "types": {
  "x": "numeric",
 "y": "numeric",
-"PANEL": "integer",
-"group": "character" 
+"group": "character",
+"PANEL": "integer" 
 },
 "chunk_order": [],
-"nest_order": [],
+"nest_order": [
+ "group" 
+],
 "subset_order": [],
 "chunks": 1,
 "total": 1 
 },
-"geom6_tallrect_convergence": {
+"geom9_line_convergence": {
+ "geom": "line",
+"classed": "geom9_line_convergence",
+"aes": {
+ "group": "start",
+"showSelected1": "start" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":      1.2,
+"showSelected": "start",
+"help_showSelected": "start" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"group": "character",
+"showSelected1": "numeric",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom10_tallrect_convergence": {
  "geom": "tallrect",
-"classed": "geom6_tallrect_convergence",
+"classed": "geom10_tallrect_convergence",
 "aes": {
  "xmin": "iteration - 0.5",
 "xmax": "iteration + 0.5",
@@ -159,8 +303,8 @@
 "xmax": "numeric",
 "y": "numeric",
 "clickSelects": "integer",
-"PANEL": "integer",
-"group": "character" 
+"group": "character",
+"PANEL": "integer" 
 },
 "chunk_order": [],
 "nest_order": [],
@@ -168,9 +312,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom7_point_convergence": {
+"geom11_point_convergence": {
  "geom": "point",
-"classed": "geom7_point_convergence",
+"classed": "geom11_point_convergence",
 "aes": {
  "x": "iteration",
 "y": "value",
@@ -187,8 +331,8 @@
  "x": "numeric",
 "y": "numeric",
 "showSelected1": "integer",
-"PANEL": "integer",
-"group": "character" 
+"group": "character",
+"PANEL": "integer" 
 },
 "chunk_order": [],
 "nest_order": [
@@ -203,22 +347,36 @@
 },
 "time": {
  "variable": "iteration",
-"ms":     1200,
-"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8" ] 
+"ms":     1000,
+"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ] 
 },
 "selectors": {
- "iteration": {
+ "start": {
  "is.variable.value": false,
 "type": "single",
 "showSelected": true,
 "clickSelects": true,
-"selected": "1",
-"levels": [ "1", "2", "3", "4", "5", "6", "7", "8" ],
+"selected": "-3",
+"levels": [ "-3", "-1", "0.5", "2.5", "4" ],
 "update": [
- "geom3_segment_newton",
-"geom4_point_newton",
-"geom6_tallrect_convergence",
-"geom7_point_convergence" 
+ "geom4_path_newton",
+"geom6_point_newton",
+"geom9_line_convergence" 
+] 
+},
+"iteration": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"chunks": "iteration",
+"clickSelects": true,
+"selected": "1",
+"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+"update": [
+ "geom5_line_newton",
+"geom7_segment_newton",
+"geom10_tallrect_convergence",
+"geom11_point_convergence" 
 ] 
 } 
 },
@@ -270,21 +428,18 @@
 "loc": {
  "x": [
  [
-       -5,
-    -2.5,
+       -3,
        0,
-     2.5,
-       5 
+       3,
+       6 
 ] 
 ],
 "y": [
  [
-       -5,
-       0,
-       5,
+        0,
       10,
-      15,
-      20 
+      20,
+      30 
 ] 
 ] 
 } 
@@ -297,69 +452,59 @@
 "loc": {
  "x": [
  [
-       -5,
-   -3.75,
-    -2.5,
-   -1.25,
+     -4.5,
+      -3,
+    -1.5,
        0,
-    1.25,
-     2.5,
-    3.75,
-       5 
+     1.5,
+       3,
+     4.5,
+       6 
 ] 
 ],
 "y": [
  [
        -5,
-    -2.5,
        0,
-     2.5,
        5,
-     7.5,
       10,
-    12.5,
       15,
-    17.5,
-      20 
+      20,
+      25,
+      30 
 ] 
 ] 
 } 
 },
 "axis1": {
  "x": [
-       -5,
-    -2.5,
+       -3,
        0,
-     2.5,
-       5 
+       3,
+       6 
 ],
 "xlab": [
- "-5.0",
-"-2.5",
-"0.0",
-"2.5",
-"5.0" 
+ "-3",
+"0",
+"3",
+"6" 
 ],
-"xrange": [     -5.5,      5.5 ],
+"xrange": [  -5.5625,   6.8125 ],
 "xline": false,
 "xticks": true,
 "y": [
-       -5,
-       0,
-       5,
+        0,
       10,
-      15,
-      20 
+      20,
+      30 
 ],
 "ylab": [
- "-5",
-"0",
-"5",
+ "0",
 "10",
-"15",
-"20" 
+"20",
+"30" 
 ],
-"yrange": [ -5.249337, 22.24997 ],
+"yrange": [ -9.953125, 33.01562 ],
 "yline": false,
 "yticks": true 
 },
@@ -374,21 +519,18 @@
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "-5.0",
-"-2.5",
-"0.0",
-"2.5",
-"5.0" 
+ "-3",
+"0",
+"3",
+"6" 
 ],
 "ylabs": [
- "-5",
-"0",
-"5",
+ "0",
 "10",
-"15",
-"20" 
+"20",
+"30" 
 ],
-"title": "Newton-Raphson Method",
+"title": "Newton Method (Multiple Starting Points)",
 "title_size": "14.4pt",
 "options": {
  "width":      400,
@@ -402,8 +544,11 @@
 "geoms": [
  "geom1_line_newton",
 "geom2_hline_newton",
-"geom3_segment_newton",
-"geom4_point_newton" 
+"geom3_path_newton",
+"geom4_path_newton",
+"geom5_line_newton",
+"geom6_point_newton",
+"geom7_segment_newton" 
 ] 
 },
 "convergence": {
@@ -453,19 +598,18 @@
 "loc": {
  "x": [
  [
-        2,
-       4,
-       6,
-       8 
+        0,
+     2.5,
+       5,
+     7.5,
+      10 
 ] 
 ],
 "y": [
  [
         0,
        5,
-      10,
-      15,
-      20 
+      10 
 ] 
 ] 
 } 
@@ -478,14 +622,15 @@
 "loc": {
  "x": [
  [
-        1,
-       2,
-       3,
-       4,
+        0,
+    1.25,
+     2.5,
+    3.75,
        5,
-       6,
-       7,
-       8 
+    6.25,
+     7.5,
+    8.75,
+      10 
 ] 
 ],
 "y": [
@@ -495,45 +640,40 @@
        5,
      7.5,
       10,
-    12.5,
-      15,
-    17.5,
-      20 
+    12.5 
 ] 
 ] 
 } 
 },
 "axis1": {
  "x": [
-        2,
-       4,
-       6,
-       8 
+        0,
+     2.5,
+       5,
+     7.5,
+      10 
 ],
 "xlab": [
- "2",
-"4",
-"6",
-"8" 
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0" 
 ],
-"xrange": [      0.1,      8.9 ],
+"xrange": [        0,       11 ],
 "xline": false,
 "xticks": true,
 "y": [
         0,
        5,
-      10,
-      15,
-      20 
+      10 
 ],
 "ylab": [
  "0",
 "5",
-"10",
-"15",
-"20" 
+"10" 
 ],
-"yrange": [    -1.05,    22.05 ],
+"yrange": [ -0.703125, 14.76562 ],
 "yline": false,
 "yticks": true 
 },
@@ -548,19 +688,18 @@
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "2",
-"4",
-"6",
-"8" 
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0" 
 ],
 "ylabs": [
  "0",
 "5",
-"10",
-"15",
-"20" 
+"10" 
 ],
-"title": "|f(x)| vs Iteration",
+"title": "Convergence of Newton Method",
 "title_size": "14.4pt",
 "options": {
  "width":      400,
@@ -572,9 +711,10 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom5_line_convergence",
-"geom6_tallrect_convergence",
-"geom7_point_convergence" 
+ "geom8_line_convergence",
+"geom9_line_convergence",
+"geom10_tallrect_convergence",
+"geom11_point_convergence" 
 ] 
 } 
 },
